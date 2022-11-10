@@ -60,7 +60,6 @@ if __name__ == '__main__':
                         reg_y_upper = min(y, reg_y_upper)
                         reg_x_lower = max(x + w_r, reg_x_lower)
                         reg_y_lower = max(y + h_r, reg_y_lower)
-                        cv2.rectangle(product_img, (x, y), (x + w_r, y + h_r), (255, 255, 255), 1)
 
                 cv2.rectangle(product_img, (reg_x_upper, reg_y_upper), (reg_x_lower, reg_y_lower), (0, 0, 255), 3)
 
